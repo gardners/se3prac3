@@ -6,7 +6,7 @@
 
 int main(int argc,char **argv)
 {
-  // Randomise random unmber generator initial state.
+  // Randomise random number generator initial state.
   srandom(time(0));
   
   int board_size=4;
