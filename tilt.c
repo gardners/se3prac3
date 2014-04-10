@@ -26,7 +26,8 @@ int tilt_line_left(int length,int *line)
       line[i+1]=0;
     }
   }
-  
+
+  // slide again to ensure numbers are where they should be  
   int h;
   for(h=3; h>=1; h--) {
     if (line[h]!=0 && line[h-1]==0) {
