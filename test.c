@@ -77,6 +77,8 @@ int board_vector_test(int i1,int i2,int i3,int i4,char *msg,
   return 0;
 }
 
+board_vector_test(1,2,3,4,"Rotate 2x2 board right (+90)",3,1,4,2,board_rotate_90);
+
 int main(int argc,char **argv)
 {
   int e=0;
