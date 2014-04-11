@@ -40,10 +40,13 @@ int test_tilt_left()
   e|=ttl_vector(0,0,1,0,"Value in middle shifts to left edge after shift",1,0,0,0);
   e|=ttl_vector(1,2,4,8,"Distinct values don't combine",1,2,4,8);
   e|=ttl_vector(1,1,1,1,"Combinations don't cascade",2,2,0,0);
-  e|=ttl_vector(0,0,1,1,NULL,2,0,0,0);
-  e|=ttl_vector(4,0,1,1,NULL,4,2,0,0);
-  e|=ttl_vector(2,0,1,1,NULL,2,2,0,0);
+  e|=ttl_vector(0,0,1,1,"1's in location 3 and 4 cascade",2,0,0,0);
+  e|=ttl_vector(4,0,1,1,"Cascade stops at appropriate place",4,2,0,0);
+  e|=ttl_vector(2,0,1,1,"Cascades only one step at a time",2,2,0,0);
+  
+  //my new tests pogs0004
   e|=ttl_vector(0,2,0,2,"Values cascade and combine",4,0,0,0);
+  e|=ttl_vector(2,2,2,2,"All 2's combine",4,4,0,0);
 
   return e;
 }
