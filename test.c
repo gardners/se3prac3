@@ -135,10 +135,26 @@ int main(int argc,char **argv)
   e|=test_tilt_left();
 
 // 2x2 rotate 90 tests /////////////////////////////////////
-  board_vector_test(1,2,3,4,"Rotate 2x2 board right (+90)",3,1,4,2,board_rotate_90);  
+  board_vector_test(1,2,3,4,"Rotate 2x2 board right (+90)",3,1,4,2,board_rotate_90);
+
+// 2x2 rotate 180 tests ////////////////////////////////////
+  board_vector_test(1,2,3,4,"Rotate 2x2 180R",4,3,2,1,board_rotate_180);
+  board_vector_test(0,0,0,0,"Rotate 2x2 180R",0,0,0,0,board_rotate_180); 
+  board_vector_test(2,2,3,3,"Rotate 2x2 180R",3,3,2,2,board_rotate_180);
+  
 
 // 3x3 rotate 90 tests /////////////////////////////////////
   board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 +90 R",7,4,1,8,5,2,9,6,3,board_rotate_90);
+  board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 +90 R",7,4,1,8,5,2,9,6,3,board_rotate_90);
+  board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 +90 R",7,4,1,8,5,2,9,6,3,board_rotate_90);
+
+// 3x3 rotate 180 tests /////////////////////////////////////
+  board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 +180 R",7,4,1,8,5,2,9,6,3,board_rotate_180);
+  board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 +180 R",7,4,1,8,5,2,9,6,3,board_rotate_180);
+  board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 +180 R",7,4,1,8,5,2,9,6,3,board_rotate_180);
+
+
+
   return e;
 
 }
