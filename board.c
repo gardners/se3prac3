@@ -44,3 +44,11 @@ int board_rotate_180(int size, int **board){
   board_rotate_90(size, board);
   return board_rotate_90(size, board);
 }
+
+int board_rotate_270(int size, int **board){
+
+// rotate 180 x1
+// rotate 90 x1
+  board_rotate_180(size, board);
+  return board_rotate_90(size, board);
+}
