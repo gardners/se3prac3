@@ -1,5 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <alloca.h>
 #include "2048.h"
+//#include "board.c"
+
 
 int line_vector_test(int i1,int i2,int i3,int i4,char *msg,
                 int o1,int o2,int o3,int o4, int (*func)(int,int *))
@@ -51,9 +55,16 @@ int test_tilt_left()
   return e;
 }
 
+
+//put 4x4 board tests here ////////////////////
+
+
+
 int main(int argc,char **argv)
 {
   int e=0;
   e|=test_tilt_left();
+  
   return e;
+
 }
