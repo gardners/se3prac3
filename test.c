@@ -81,9 +81,16 @@ int main(int argc,char **argv)
 {
   int e=0;
   e|=test_tilt_left();
+
   board_vector_test(1,2,4,8,"Rotate 2x2 board right (+90)",4,1,8,2,board_rotate_90);
   board_vector_test(0,1,2,4,"Rotate 2x2 board right (+90)",2,0,4,1,board_rotate_90);
   board_vector_test(0,0,0,1,"Rotate 2x2 board right (+90)",0,0,1,0,board_rotate_90);
   board_vector_test(1,0,0,1,"Rotate 2x2 board right (+90)",0,1,1,0,board_rotate_90);
+ 
+  board_vector_test(1,2,4,8,"Rotate 2x2 board right (+180)",8,4,2,1,board_rotate_180);
+  board_vector_test(0,1,2,4,"Rotate 2x2 board right (+180)",4,2,1,0,board_rotate_180);
+  board_vector_test(0,0,0,1,"Rotate 2x2 board right (+180)",1,0,0,0,board_rotate_180);
+  board_vector_test(1,0,0,1,"Rotate 2x2 board right (+180)",1,0,0,1,board_rotate_180);
+
   return e;
 }

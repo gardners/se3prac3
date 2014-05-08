@@ -60,3 +60,6 @@ int board_rotate_90(int size, int **board) {
  return 0;
 }
 
+int board_rotate_180(int size, int **board) {
+  return 0;
+}
