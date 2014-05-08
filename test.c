@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "2048.h"
-#define alloca(x)  __builtin_alloca(x)
+#include <alloca.h>
 
 int line_vector_test(int i1,int i2,int i3,int i4,char *msg,
                 int o1,int o2,int o3,int o4, int (*func)(int,int *))
