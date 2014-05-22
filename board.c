@@ -34,6 +34,8 @@ int board_display(int size,int **board)
   return 0;
 }
 
+
+
 int board_rotate_90(int size, int **board){
  
 //do the 90 deg rotate right
@@ -69,4 +71,14 @@ int board_rotate_270(int size, int **board){
 // rotate 90 x1
   board_rotate_180(size, board);
   return board_rotate_90(size, board);
+}
+
+
+//Function to add tiles to the board
+//Add either a 2 or a 4
+
+int add_new_tile(int size, int **board){
+
+return 0;
+
 }
