@@ -69,5 +69,9 @@ int board_rotate_180(int size, int **board) {
 }
 
 int board_rotate_270(int size, int **board) {
-  return 0;
+
+  //call rotate 180, then rotate 90 for a total of 270
+
+  board_rotate_180(size, board);
+  return board_rotate_90(size, board);
 }
