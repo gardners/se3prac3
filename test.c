@@ -217,7 +217,11 @@ int main(int argc,char **argv)
   board_vector_test(1,2,3,4,"Rotate 2x2 180R",4,3,2,1,board_rotate_180);
   board_vector_test(0,0,0,0,"Rotate 2x2 180R",0,0,0,0,board_rotate_180); 
   board_vector_test(2,2,3,3,"Rotate 2x2 180R",3,3,2,2,board_rotate_180);
-  
+
+// 2x2 rotate 270 tests  //////////////////////////////////
+  board_vector_test(1,2,3,4,"Rotate 2x2 board 270",2,4,1,3,board_rotate_270);
+  board_vector_test(0,0,1,1,"Rotate 2x2 board 270",0,1,0,1,board_rotate_270);
+  board_vector_test(4,4,4,4,"Rotate 2x2 board 270",4,4,4,4,board_rotate_270);  
 
 // 3x3 rotate 90 tests /////////////////////////////////////
   board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 +90 R",7,4,1,8,5,2,9,6,3,board_rotate_90);
@@ -229,10 +233,27 @@ int main(int argc,char **argv)
   board3_vector_test(9,8,7,6,5,4,3,2,1,"Rotate 3x3 +180 R",3,6,9,2,5,8,1,4,7,board_rotate_180);
   board3_vector_test(0,1,0,1,0,1,0,1,0,"Rotate 3x3 +180 R",0,1,0,1,0,1,0,1,0,board_rotate_180);
 
+// 3x3 rotate 270 tests ////////////////////////////////////
+  board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 270",3,6,9,2,5,8,1,4,7,board_rotate_270);
+  board3_vector_test(1,1,1,2,2,2,3,3,3,"Rotate 3x3 270",1,2,3,1,2,3,1,2,3,board_rotate_270);
+  board3_vector_test(1,0,1,0,1,0,1,0,1,"Rotate 3x3 270",1,0,1,0,1,0,1,0,1,board_rotate_270);
+
 
 // 4x4 rotate 90 tests /////////////////////////////////////
-  board4_vector_test(1,2,3,4, 5,6,7,8, 1,2,3,4, 5,6,7,8, "Rotate 4x4 board right (+90)"
-                    ,4,3,2,1, 8,7,6,5, 4,3,2,1, 8,7,6,5, board_rotate_90);
+  board4_vector_test(1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,"Rotate 4x4 board right (+90)"
+                    ,4,3,2,1,8,7,6,5,4,3,2,1,8,7,6,5,board_rotate_90);
+  board4_vector_test(0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,"Rotate 4x4 board 90"
+                    ,3,2,1,0,3,2,1,0,3,2,1,0,3,2,1,0,board_rotate_90);
+  board4_vector_test(0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,"Rotate 4x4 board 90"
+                    ,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,0,board_rotate_90);
+
+// 4x4 rotate 180 tests ///////////////////////////////////
+  board4_vector_test(1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,"Rotate 4x4 board 180"
+                    ,8,7,6,5,4,3,2,1,8,7,6,5,4,3,2,1,board_rotate_180);
+  board4_vector_test(0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,"Rotate 4x4 board 180"
+                    ,3,3,3,3,2,2,2,2,1,1,1,1,0,0,0,0,board_rotate_180);
+  board4_vector_test(0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,"Rotate 4x4 board 180"
+                    ,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,board_rotate_180);
 
 
 
