@@ -16,6 +16,11 @@ int main(int argc,char **argv)
     exit(0);
   }
 
+//add 2 tiles
+  add_new_tile(board_size, board);
+  add_new_tile(board_size, board);
+
+
   while(1) {
     board_display(board_size,board);
     printf("Next move? "); fflush(stdout);
