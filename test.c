@@ -217,5 +217,10 @@ int main(int argc,char **argv)
   board4_vector_test(1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8, "Rotate 4x4 board right (+90)"
   ,5,1,5,1,6,2,6,2,7,3,7,3,8,4,8,4, board_rotate_90);
 
+  board4_vector_test(1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8, "Rotate 4x4 board right (+180)"
+  ,8,7,6,5,4,3,2,1,8,7,6,5,4,3,2,1, board_rotate_180);
+
+  board4_vector_test(1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8, "Rotate 4x4 board right (+270)"
+  ,4,8,4,8,3,7,3,7,2,6,2,6,1,5,1,5, board_rotate_270);
   return e;
 }
