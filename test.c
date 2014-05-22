@@ -188,9 +188,14 @@ int board4_vector_test(int i1, int i2, int i3, int i4,
         (board[2][3] != o15) ||
         (board[3][3] != o16)){
 
-    printf("FAILED:\n");
-
-    return -1;
+    printf("FAILED: {{%d,%d,%d,%d},{%d,%d,%d,%d},{%d,%d,%d,%d},{%d,%d,%d,%d}} became {{%d,%d,%d,%d},{%d,%d,%d,%d},{%d,%d,%d,%d},{%d,%d,%d,%d}} instead of"
+                  " {{%d,%d,%d,%d},{%d,%d,%d,%d},{%d,%d,%d,%d},{%d,%d,%d,%d}}\n",
+                    i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12,i13,i14,i15,i16,
+                    board[0][0],board[1][0],board[2][0],board[3][0],
+                    board[0][1],board[1][1],board[2][1],board[3][1],
+                    board[0][2],board[1][2],board[2][2],board[3][2],
+                    board[0][3],board[1][3],board[2][3],board[3][3],o1,o2,o3,o4,o5,o6,o7,o8,o9,o10,o11,o12,o13,o14,o15,o16);
+                    return -1;
 
     }
 
@@ -229,8 +234,8 @@ int main(int argc,char **argv)
   board3_vector_test(0,0,0,1,1,1,2,2,2,"Rotate 3x3 +90 R",2,1,0,2,1,0,2,1,0,board_rotate_90);
 
 // 3x3 rotate 180 tests /////////////////////////////////////
-  board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 +180 R",7,4,1,8,5,2,9,6,3,board_rotate_180);
-  board3_vector_test(9,8,7,6,5,4,3,2,1,"Rotate 3x3 +180 R",3,6,9,2,5,8,1,4,7,board_rotate_180);
+  board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 +180 R",9,8,7,6,5,4,3,2,1,board_rotate_180);
+  board3_vector_test(9,8,7,6,5,4,3,2,1,"Rotate 3x3 +180 R",1,2,3,4,5,6,7,8,9,board_rotate_180);
   board3_vector_test(0,1,0,1,0,1,0,1,0,"Rotate 3x3 +180 R",0,1,0,1,0,1,0,1,0,board_rotate_180);
 
 // 3x3 rotate 270 tests ////////////////////////////////////
@@ -240,8 +245,8 @@ int main(int argc,char **argv)
 
 
 // 4x4 rotate 90 tests /////////////////////////////////////
-  board4_vector_test(1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,"Rotate 4x4 board right (+90)"
-                    ,4,3,2,1,8,7,6,5,4,3,2,1,8,7,6,5,board_rotate_90);
+  board4_vector_test(1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,"Rotate 4x4 board 90"
+                    ,5,1,5,1,6,2,6,2,7,3,7,3,8,4,8,4,board_rotate_90);
   board4_vector_test(0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,"Rotate 4x4 board 90"
                     ,3,2,1,0,3,2,1,0,3,2,1,0,3,2,1,0,board_rotate_90);
   board4_vector_test(0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,"Rotate 4x4 board 90"

@@ -35,7 +35,25 @@ int board_display(int size,int **board)
 }
 
 int board_rotate_90(int size, int **board){
- return 0;
+ 
+//do the 90 deg rotate right
+
+  int i, j;
+  int myBoard[size][size];
+
+    for(i = 0; i < size; i++){
+      for(j = 0; j < size; j++){
+        myBoard[(size - 1) -j] [i] = board[i][j];
+      }
+    }
+
+    for(i = 0; i < size; i++){ 
+      for(j = 0; j < size; j++){
+        board[i][j] = myBoard[i][j];
+      }
+    }
+
+  return 0;
 }
 
 int board_rotate_180(int size, int **board){
