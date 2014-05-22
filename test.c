@@ -150,7 +150,7 @@ int main(int argc,char **argv)
   board_vector_test(1,0,0,1,"Rotate 2x2 board right (+270)",0,1,1,0,board_rotate_270);
 
   //rotate tests for 3x3 board
-
+  board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 board right (+90)",7,4,1,8,5,2,9,6,3,board_rotate_90);
 
   //rotate tests for 4x4 board
 
