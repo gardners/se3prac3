@@ -79,6 +79,43 @@ int board_rotate_270(int size, int **board){
 
 int add_new_tile(int size, int **board){
 
-return 0;
+  int val, num = 0;
+  int i, j;
+
+  for(i = 0; i < size; i++){ 
+    for(j = 0; j < size; j++){
+      if (!board[i][j]){
+         num++;
+      }
+    }
+  }
+
+
+  if (num < 1){ 
+    return -1;
+  }
+
+  num = random()%num;
+
+  if (random()&1){
+    val = 2;
+  } else {
+    val = 4;
+  }
+
+  for(i = 0; i < size; i++){ 
+    for(j = 0; j < size; j++){
+      if (!board[i][j]) {
+       if (num) {
+          num--;
+       } else {
+          board[i][j] = val;
+          return 0;
+        }
+      }
+    }
+  }
+
+ return -1;
 
 }
