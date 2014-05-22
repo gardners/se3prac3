@@ -151,6 +151,10 @@ int main(int argc,char **argv)
 
   //rotate tests for 3x3 board
   board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 board right (+90)",7,4,1,8,5,2,9,6,3,board_rotate_90);
+  
+  board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 board right (+180)",9,8,7,6,5,4,3,2,1,board_rotate_180);
+
+  board3_vector_test(1,2,3,4,5,6,7,8,9,"Rotate 3x3 board right (+270)",3,6,9,2,5,8,1,4,7,board_rotate_270);
 
   //rotate tests for 4x4 board
 
