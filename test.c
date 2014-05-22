@@ -255,6 +255,13 @@ int main(int argc,char **argv)
   board4_vector_test(0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,"Rotate 4x4 board 180"
                     ,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,board_rotate_180);
 
+// 4x4 rotate 270 tests ///////////////////////////////////
+  board4_vector_test(1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,"Rotate 4x4 board 270"
+                    ,4,8,4,8,3,7,3,7,2,6,2,6,1,5,1,5,board_rotate_270);
+  board4_vector_test(0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,"Rotate 4x4 board 270"
+                    ,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,board_rotate_270);
+  board4_vector_test(0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,"Rotate 4x4 board 270"
+                    ,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,board_rotate_270);
 
 
   return e;
