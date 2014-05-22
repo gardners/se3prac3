@@ -205,6 +205,58 @@ int board4_vector_test(int i1, int i2, int i3, int i4,
 
 }
 
+// add tile test //////////////////
+
+int board4_add_tile_test(char *msg, int (*func)(int,int 
+**)){
+
+  int size = 4;
+  int **board = calloc(size,sizeof(int *));
+
+  if (!board) return NULL;
+
+  int i;
+
+  for(i=0;i<size;i++) {
+    board[i]=calloc(size,sizeof(int));
+    if (!board[i]){
+      return NULL;
+    }
+  }
+
+  if (msg){
+     printf("%s - ", msg);
+  } else {
+
+    //print something useful
+
+  }
+
+  fflush(stdout);
+
+  func(4,board);
+
+  int num = 0;
+  int j;
+
+  for(i = 0; i < size; i++){ 
+    for(j = 0; j < size; j++){
+     if (board[i][j]){
+       num++;
+      }
+    }
+  }
+
+  if(num != 1){
+    printf("FAILED: Board contains %d tiles.\n", num);
+    return -1;
+  }
+
+  printf("PASSED.\n");
+  return 0;
+
+}
+
 
 int main(int argc,char **argv)
 {
@@ -267,6 +319,9 @@ int main(int argc,char **argv)
                     ,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,board_rotate_270);
   board4_vector_test(0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,"Rotate 4x4 board 270"
                     ,0,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,board_rotate_270);
+
+// add tile test /////////////////////////////////////////
+  board4_add_tile_test("Add new tile test",add_new_tile);
 
 
   return e;
