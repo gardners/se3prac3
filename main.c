@@ -27,14 +27,20 @@ int main(int argc,char **argv)
     int action=read_input();
     switch(action) {
     case GO_LEFT:
+      tilt_board_left(board_size, board);
+      add_new_tile(board_size, board);
       break;
     case GO_RIGHT:
+      tilt_board_right(board_size, board);
+      add_new_tile(board_size, board);
       break;
     case GO_UP:
+      tilt_board_up(board_size, board);
+      add_new_tile(board_size, board);
       break;
     case GO_DOWN:
-      break;
-    case GO_NOWHERE:
+      tilt_board_down(board_size, board);
+      add_new_tile(board_size, board);
       break;
     case INVALID_INPUT:
     default:
@@ -43,3 +49,6 @@ int main(int argc,char **argv)
     }
   }
 }
+
+
+
