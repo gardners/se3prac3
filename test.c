@@ -375,6 +375,8 @@ int main(int argc,char **argv)
 
 // add tile test /////////////////////////////////////////
   board4_add_tile_test("Add new tile test",add_new_tile);
+  board4_tile_value_test("Tile Vale test",add_new_tile);
+
 
 
   return e;
