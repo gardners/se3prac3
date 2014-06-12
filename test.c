@@ -298,7 +298,7 @@ int board4_tile_value_test(char *msg, int (*func)(int,int
     }
   }
 
-  if(num != 2 || num != 4){
+  if(num != 2 && num != 4){
     printf("FAILED: Tile Value is %d tiles.\n", num);
     return -1;
   }
