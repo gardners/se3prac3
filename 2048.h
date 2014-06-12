@@ -17,3 +17,8 @@ int board_spawn_tile(int size,int **board);
 int combine_tiles(int length,int *line,int offset);
 int tilt_through_empty_space(int length, int *line);
 int tilt_line_left(int length,int *line);
+
+int board_rotate_90(int size, int **board);
+int board_rotate_180(int size, int **board);
+int board_rotate_270(int size, int **board);
+int add_new_tile(int size, int **board);

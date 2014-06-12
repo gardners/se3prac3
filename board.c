@@ -34,3 +34,88 @@ int board_display(int size,int **board)
   return 0;
 }
 
+
+
+int board_rotate_90(int size, int **board){
+ 
+//do the 90 deg rotate right
+
+  int i, j;
+  int myBoard[size][size];
+
+    for(i = 0; i < size; i++){
+      for(j = 0; j < size; j++){
+        myBoard[(size - 1) -j] [i] = board[i][j];
+      }
+    }
+
+    for(i = 0; i < size; i++){ 
+      for(j = 0; j < size; j++){
+        board[i][j] = myBoard[i][j];
+      }
+    }
+
+  return 0;
+}
+
+int board_rotate_180(int size, int **board){
+  
+// rotate 90 x2
+  board_rotate_90(size, board);
+  return board_rotate_90(size, board);
+}
+
+int board_rotate_270(int size, int **board){
+
+// rotate 180 x1
+// rotate 90 x1
+  board_rotate_180(size, board);
+  return board_rotate_90(size, board);
+}
+
+
+//Function to add tiles to the board
+//Add either a 2 or a 4
+
+int add_new_tile(int size, int **board){
+
+  int val, num = 0;
+  int i, j;
+
+  for(i = 0; i < size; i++){ 
+    for(j = 0; j < size; j++){
+      if (!board[i][j]){
+         num++;
+      }
+    }
+  }
+
+
+  if (num < 1){ 
+    return -1;
+  }
+
+  num = random()%num;
+
+  if (random()&1){
+    val = 2;
+  } else {
+    val = 4;
+  }
+
+  for(i = 0; i < size; i++){ 
+    for(j = 0; j < size; j++){
+      if (!board[i][j]) {
+       if (num) {
+          num--;
+       } else {
+          board[i][j] = val;
+          return 0;
+        }
+      }
+    }
+  }
+
+ return -1;
+
+}
