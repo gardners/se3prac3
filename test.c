@@ -258,6 +258,59 @@ int board4_add_tile_test(char *msg, int (*func)(int,int
 }
 
 
+int board4_tile_value_test(char *msg, int (*func)(int,int
+**)){
+
+  int size = 4;
+  int **board = calloc(size,sizeof(int *));
+
+  if (!board) return NULL;
+
+  int i;
+
+  for(i=0;i<size;i++) {
+    board[i]=calloc(size,sizeof(int));
+    if (!board[i]){
+      return NULL;
+    }
+  }
+
+  if (msg){
+     printf("%s - ", msg);
+  } else {
+
+    //print something useful
+
+  }
+
+  fflush(stdout);
+
+  func(4,board);
+
+  int num = 0;
+  int j;
+
+  for(i = 0; i < size; i++){
+    for(j = 0; j < size; j++){
+     if (board[i][j]){
+       num = board[i][j];
+      }
+    }
+  }
+
+  if(num != 2 || num != 4){
+    printf("FAILED: Tile Value is %d tiles.\n", num);
+    return -1;
+  }
+
+  printf("PASSED.\n");
+  return 0;
+
+}
+
+
+
+
 int main(int argc,char **argv)
 {
   int e=0;
