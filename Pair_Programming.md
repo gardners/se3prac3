@@ -29,5 +29,5 @@ While we did not make huge progress on the task, the benefits of pair programmin
 
 Conclusion
 -----------
-The impression I got from my experience of the practical task is that pair programming is a method of software development that requires some practice to execute effectively. I would have liked this method of software development to be introduced to me at an earlier stage in my degree, as I think it would have been beneficial, especially considering all the opportunities there have been for programming in groups of two. Overall I think it was valuable exercise and I enjoyed it.
+The impression I got from my experience of the practical task, is that pair programming is a method of software development that requires some practice to execute effectively. I would have liked this method of software development to be introduced to me at an earlier stage in my degree, as I think it would have been beneficial, especially considering all the opportunities there have been for programming in groups of two. Overall I think it was valuable exercise and I enjoyed it.
 
