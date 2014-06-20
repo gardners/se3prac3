@@ -1,5 +1,5 @@
-Review of Pair Programming 
----------------------------
+Pair Programming Review 
+------------------------
 
 Background
 -----------
