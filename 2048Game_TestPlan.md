@@ -7,9 +7,9 @@ Resources
 ---------
 
 The resources required to complete the testing process are as follows.
-  A unix machine
-  All the 2048Game program files
-  All the 2048Game test files
+A unix machine.
+All the 2048Game program files.
+All the 2048Game test files.
   
 Major Code Files
 ----------------
@@ -37,8 +37,7 @@ Tests
 
 I will be using black box testing techniques, mainly in the form of compliance tests, production tests and regression tests, to test the program.
 
-The compliance tests will test different stages of the program, as it is being developed. These include tests for functions such as
-combining tiles, sliding tiles, rotating the board, etc.
+The compliance tests will test different stages of the program, as it is being developed. These include tests for functions such as combining tiles, sliding tiles, rotating the board, etc.
 
 The production tests will provide further testing for each stage of the program and will include further tests for each function listed
 previously.
