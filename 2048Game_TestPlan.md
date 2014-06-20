@@ -6,31 +6,17 @@ The purpose of this document is to provide a test plan for the 2048 program. 204
 Resources
 ---------
 
-The resources required to complete the testing process are as follows.
-A unix machine.
-All the 2048Game program files.
-All the 2048Game test files.
+The resources required to complete the testing process are as follows; a unix machine, all the 2048Game program files, all the 2048Game test files.
   
 Major Code Files
 ----------------
 
-Board.c
-Main.c
-Tilt.c
+board.c, main.c, tilt.c
 
 Components Needing Testing
 --------------------------
 
-Tilt left
-Tilt right
-Tilt up
-Tilt down
-Rotate 90
-Rotate 180
-Rotate 270
-Rotate 360
-Combine tiles
-Spawn new tiles
+tilt left, tilt right, tilt up, tilt down, rotate 90, rotate 180, rotate 270, rotate 360, combine tiles, spawn new tiles
 
 Tests
 -----
