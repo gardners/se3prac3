@@ -20,7 +20,7 @@ of words. We were required to use each of the words in a short story, that we we
 
 While every group managed to create some form of story, I found that my group quickly went into "group" mode. It was more difficult than expected to stick to the pair programming schema. The practice task turned out to be good preparation for the practical, which was a coding task.
 
-The practical task was to develop a date parser program that would be able to derive a date from a range of different input, such as input in obvious date formats to input which was indistinguishable as dates. The first problem for us was to select a programming language. With differing programming skills we settled on Java as being the best compromise.
+The practical task was to develop a date parser program that would be able to derive a date from a range of different input, such as input in obvious date formats to input which was indistinguishable as dates. The first problem for us was to select a programming language. With differing programming skills we eventually settled on Java.
 
 Results
 --------
