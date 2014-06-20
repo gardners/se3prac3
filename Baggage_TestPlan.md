@@ -1,7 +1,11 @@
 Test Plan for Baggage Handling System
 -------------------------------------
 
-Firstly, the problem can be decomposed into two areas; baggage check-in and baggage carrousel.
+Firstly, the problem can be decomposed into two areas:
+
+1) Baggage check-in
+
+2) Baggage carrousel
 
 The baggage check-in should be relatively easy to test, but the baggage carrousel will require more thought.
 
@@ -36,8 +40,6 @@ In my opinion the three most important tests (in no particular order) are:
     congestion management etc.
     
 3) Integration: to ensure that multiple tracks work together and that both systems work together.
-
-
 
 In my opinion the three least important test are:
 
