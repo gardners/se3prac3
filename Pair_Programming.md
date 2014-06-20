@@ -25,7 +25,7 @@ The practical task was to develop a date parser program that would be able to de
 Results
 --------
 
-While we did not make huge progress on the task, the benefits of pair programming was definitely highlighted. While the driver coded the navigator made decisions to guide the team in finding the best result. However, we did not end up swaping roles as often as we should have because of the differences in our coding ability 
+While we did not make huge progress on the task, the benefits of pair programming were definitely highlighted. While the driver coded the navigator made decisions to guide the team in finding the best result. However, we did not end up swaping roles as often as we should have because of the differences in our coding ability 
 
 Conclusion
 -----------
