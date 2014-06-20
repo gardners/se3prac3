@@ -6,7 +6,7 @@ The purpose of this document is to provide a test plan for the 2048 program. 204
 Resources
 ---------
 
-The resources required to complete the testing process are as follows:
+The resources required to complete the testing process are as follows.
   A unix machine
   All the 2048Game program files
   All the 2048Game test files
