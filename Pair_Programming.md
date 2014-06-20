@@ -15,7 +15,7 @@ The pair should regularly swap roles after a predetermined period of time, or at
 Practical Task
 ---------------
 
-Our class was given the taks of undertaking a pari programming exercise. We began with a practice session, in which we formed small groups and were provided with a list
+Our class was given the taks of undertaking a pair programming exercise. We began with a practice session, in which we formed small groups and were provided with a list
 of words. We were required to use each of the words in a short story, that we were to write, using the pair programming approach. 
 
 While every group managed to create some form of story, I found that my group quickly went into "group" mode. It was more difficult than expected to stick to the pair programming schema. The practice task turned out to be good preparation for the practical, which was a coding task.
