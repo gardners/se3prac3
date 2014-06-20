@@ -7,30 +7,30 @@ Resources
 ---------
 
 The resources required to complete the testing process are as follows:
-  -A unix machine
-  -All the 2048Game program files
-  -All the 2048Game test files
+  A unix machine
+  All the 2048Game program files
+  All the 2048Game test files
   
 Major Code Files
 ----------------
 
-board.c
-main.c
-tilt.c
+Board.c
+Main.c
+Tilt.c
 
 Components Needing Testing
 --------------------------
 
-tilt left
-tilt right
-tilt up
-tilt down
-rotate 90
-rotate 180
-rotate 270
-rotate 360
-combine tiles
-spawn new tiles
+Tilt left
+Tilt right
+Tilt up
+Tilt down
+Rotate 90
+Rotate 180
+Rotate 270
+Rotate 360
+Combine tiles
+Spawn new tiles
 
 Tests
 -----
